@@ -21,7 +21,7 @@ internal sealed class SettingsForm : Form
         MinimumSize = new Size(590, 510);
         MaximizeBox = false;
         StartPosition = FormStartPosition.CenterScreen;
-        Icon = SystemIcons.Application;
+        Icon = AppIcon.Value;
         var layout = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(24), ColumnCount = 1, RowCount = 7 };
         foreach (var size in new[] { 46f, 46f, 0f, 48f, 36f, 48f, 55f })
             layout.RowStyles.Add(size == 0 ? new RowStyle(SizeType.Percent, 100) : new RowStyle(SizeType.Absolute, size));

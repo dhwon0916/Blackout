@@ -21,7 +21,7 @@ internal sealed class TrayContext : ApplicationContext
         try { Settings = Settings.Load(); }
         catch (Exception ex) { Settings = new(); warning = "Saved settings could not be loaded. Defaults are in use. " + ex.Message; }
         Settings.Reconcile(Screens);
-        tray = new NotifyIcon { Text = "Blackout • monitor control", Icon = SystemIcons.Application, Visible = true };
+        tray = new NotifyIcon { Text = "Blackout • monitor control", Icon = AppIcon.Value, Visible = true };
         tray.DoubleClick += (_, _) => ShowSettings();
         hotkeys.ShowRequested += ShowSettings;
         BuildMenu();

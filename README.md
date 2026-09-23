@@ -4,7 +4,7 @@ A small Windows tray utility that covers individual monitors with black windows.
 
 ## Run
 
-Download **Blackout-1.0.0-win-x64.zip** from this repository's **Releases** page, extract the entire archive into a permanent folder, and open `Blackout.exe`. The release supports Windows 10/11 x64 and includes the .NET runtime. Close the settings window to keep Blackout in the tray; double-click the tray icon to reopen it. Use **Quit Blackout** in the tray menu to exit and restore every screen.
+Download **Blackout-1.0.1-win-x64.zip** from this repository's **Releases** page, extract the entire archive into a permanent folder, and open `Blackout.exe`. The release supports Windows 10/11 x64 and includes the .NET runtime. Close the settings window to keep Blackout in the tray; double-click the tray icon to reopen it. Use **Quit Blackout** in the tray menu to exit and restore every screen.
 
 If you build the smaller framework-dependent package in `dist`, it requires the .NET 10 Windows Desktop Runtime. The app is unsigned.
 
@@ -46,3 +46,4 @@ The package and checksum are written under `artifacts`. The script runs the self
 Manual checks: toggle each connected display and restore it with the same shortcut; restore all; double-click and right-click an overlay; verify tray hiding, shortcut edits, startup on next sign-in, and monitor reconnects. Check mixed DPI and fullscreen apps on your own display configuration.
 
 To remove: disable startup and save, quit from the tray, then delete the app folder. Optionally delete `%LOCALAPPDATA%\Blackout` to remove saved settings.
+
